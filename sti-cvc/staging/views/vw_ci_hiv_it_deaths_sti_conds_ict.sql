@@ -32,11 +32,12 @@ WHERE
 	ds.datasetid = 349095
 AND dv.deleted = 0
 AND de.uid IN (
-'u33J71fJ3Df','rJFQD7Ch9Yq','hIPKN9bhPUl','F4OW4Q1bt0B',
+'u33J71fJ3Df','QnhcdnNv24z','rJFQD7Ch9Yq','hIPKN9bhPUl','F4OW4Q1bt0B',
 'zG8njaE1wy1','ga3Y8K7sDUk','sUWvxBgVjH8','IENnkBP1JrJ','mM44etBnhQG',
-'jsx09RoFOnu','NC2s38o8Z6x','zH13Dhv7rW6',
+'jsx09RoFOnu','GwfSu2liRLF','T4ydkwIzbqI','NC2s38o8Z6x','zH13Dhv7rW6',
 'CtOOBlI2NKV','Lh52Yp7ifbb'
 );
+
 
 
 -- $END
