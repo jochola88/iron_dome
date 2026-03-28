@@ -23,7 +23,7 @@ WITH ci_general_cte AS (
         dd.date_id,
         dl.location_id,
         ds.sex_id
-    FROM staging.ci_general_indicators cgi LEFT JOIN base.dim_date dd ON cgi.start_date = dd.report_date
+    FROM staging.ci_general_indicators cgi LEFT JOIN base.dim_date dd ON cgi.startdate = dd.report_date
     LEFT JOIN base.dim_location dl ON cgi.facility_uid = dl.location_uid
     LEFT JOIN base.dim_sex ds ON cgi.categorization = ds.sex_code
 

@@ -22,7 +22,7 @@ CREATE TABLE base.fact_ci_general_monthly (
     positive_contacts_newly_diagnosed INT NULL
 );
 
-ALTER TABLE [base].fact_ci_general_monthly ADD CONSTRAINT PK_ci_general_monthly_id PRIMARY KEY ([fact_sti_clinic_monthly_id]);
+ALTER TABLE [base].fact_ci_general_monthly ADD CONSTRAINT PK_ci_general_monthly_id PRIMARY KEY ([fact_ci_general_monthly_id]);
 ALTER TABLE [base].fact_ci_general_monthly ADD CONSTRAINT FK_ci_general_monthly_date_id FOREIGN KEY ([date_id]) REFERENCES [base].dim_date ([date_id]);
 ALTER TABLE [base].fact_ci_general_monthly ADD CONSTRAINT FK_ci_general_monthly_location_id FOREIGN KEY ([location_id]) REFERENCES [base].dim_location ([location_id]);
 ALTER TABLE [base].fact_ci_general_monthly ADD CONSTRAINT FK_ci_general_monthly_sex_id FOREIGN KEY ([sex_id]) REFERENCES [base].dim_sex ([sex_id]);

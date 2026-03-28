@@ -1,7 +1,7 @@
 USE emtct4
 GO
 
-CREATE OR ALTER VIEW staging.vw_ci_hiv_it_deaths_sti_conds_ict AS 
+CREATE OR ALTER VIEW staging.vw_ci_paediatric_outreach AS 
 
 -- $BEGIN
 
@@ -32,13 +32,17 @@ WHERE
 	ds.datasetid = 349095
 AND dv.deleted = 0
 AND de.uid IN (
-'u33J71fJ3Df','rJFQD7Ch9Yq','hIPKN9bhPUl','F4OW4Q1bt0B',
-'zG8njaE1wy1','ga3Y8K7sDUk','sUWvxBgVjH8','IENnkBP1JrJ','mM44etBnhQG',
-'jsx09RoFOnu','NC2s38o8Z6x','zH13Dhv7rW6',
-'CtOOBlI2NKV','Lh52Yp7ifbb'
+'YSyRAu8DGyu',
+'m9FfwpX9FaW',
+'HWIE2DrbHKt',
+'mVXzxivc7Pq',
+'ju6XEd6WZiC',
+'caZCrsYupoC',
+'PLnGjYddo2X'
+
 );
 
 
 -- $END
 GO
-SELECT TOP 1000 * FROM staging.vw_ci_hiv_it_deaths_sti_conds_ict;
+SELECT TOP 1000 * FROM staging.vw_ci_paediatric_outreach;
