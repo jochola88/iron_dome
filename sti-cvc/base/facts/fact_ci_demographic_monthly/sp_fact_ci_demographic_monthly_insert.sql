@@ -6,7 +6,7 @@ TRUNCATE TABLE base.fact_ci_demographic_monthly;
 -- $BEGIN
 
 
-INSERT INTO base.fact_sti_cases_monthly (
+INSERT INTO base.fact_ci_demographic_monthly (
      date_id,
     location_id,
     cs_new_cases_reported,
@@ -49,7 +49,7 @@ SELECT
     ci_field_visits_done,
     ci_field_visits_done_persons_reached
 FROM 
-   staging.ci_paediatric_outreach cpi LEFT JOIN base.dim_date dd ON cpo.startdate = dd.report_date
+   staging.ci_paediatric_outreach cpo LEFT JOIN base.dim_date dd ON cpo.startdate = dd.report_date
     LEFT JOIN base.dim_location dl ON cpo.facility_uid = dl.location_uid;
     
 -- $END

@@ -1,7 +1,7 @@
 USE emtct4;
 Go
 
-TRUNCATE TABLE base.dim_location;
+
 
 -- $BEGIN
 
